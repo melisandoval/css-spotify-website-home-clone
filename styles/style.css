@@ -6,3 +6,112 @@ Green: #00B172
 White: #FFF
 
 */
+
+:root {
+  --white: #fff;
+  --green: #00b172;
+  --black: #1a1a1a;
+}
+
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 4rem;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: start;
+  padding-left: 1rem;
+}
+
+.logo-container img {
+  max-height: 2rem;
+  object-fit: cover;
+}
+
+.logo-container,
+.nav {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.material-symbols-outlined {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+nav ul {
+  visibility: hidden;
+  padding-inline-start: 0px;
+}
+
+nav li {
+  list-style-type: none;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1rem;
+}
+
+.hero-section {
+  margin-top: 2rem;
+  background-image: url("../images/landing.jpg");
+  width: 100%;
+  height: 80vh;
+  background-size: 100% 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.hero-section p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 700px) {
+  header img {
+    margin-left: 1em;
+  }
+
+  .material-symbols-outlined {
+    display: none !important;
+  }
+
+  .hero-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1em;
+  }
+}
