@@ -136,34 +136,32 @@ h1 {
   font-weight: 300;
 }
 
-.kanye-west-spotify-app {
-  display: none;
-}
-
 /* App section (Kanye West) */
 
-.app-section-content-container {
+.app-section {
   background-color: var(--green);
   margin: 1em;
-}
-
-.app-section-h2-container {
-  width: fit-content;
-  border-bottom: solid 0.3rem var(--white);
-  margin-left: 2em;
-  margin-right: 2em;
-  padding-top: 2em;
-  padding-bottom: 1em;
-}
-
-.app-section article {
-  padding: 1em;
 }
 
 .app-section h2,
 .app-section h3,
 .app-section p {
   color: var(--white);
+}
+
+.app-section-content-container {
+  padding: 2rem;
+}
+
+.logo-white-container {
+  display: none;
+}
+
+.app-section-h2-container {
+  width: fit-content;
+  border-bottom: solid 0.3rem var(--white);
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .app-section h2 {
@@ -182,6 +180,10 @@ h1 {
 .app-section p {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+.kanye-west-img-container img {
+  display: none;
 }
 
 @media (min-width: 700px) {
@@ -217,7 +219,45 @@ h1 {
     align-items: center;
   }
 
-  .kanye-west-spotify-app {
+  .app-section {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  .app-section-content-container {
+    padding: 2rem 4rem;
+  }
+
+  .articles-and-logo-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  .articles-container {
+    max-width: 60%;
+  }
+
+  .logo-white-container {
     display: block;
+    width: 50%;
+    display: flex;
+    place-items: center;
+  }
+
+  .logo-white-container img {
+    max-width: 100%;
+  }
+
+  .kanye-west-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .kanye-west-img-container img {
+    display: block;
+    max-width: 70%;
+    max-height: 80%;
+    object-fit: contain;
   }
 }
