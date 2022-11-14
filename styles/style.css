@@ -163,6 +163,10 @@ h1 {
     margin-right: 1em;
   }
 
+  nav a:hover {
+    color: var(--green);
+  }
+
   .featured-section-articles-container {
     display: flex;
     flex-direction: row;
