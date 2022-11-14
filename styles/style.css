@@ -140,6 +140,50 @@ h1 {
   display: none;
 }
 
+/* App section (Kanye West) */
+
+.app-section-content-container {
+  background-color: var(--green);
+  margin: 1em;
+}
+
+.app-section-h2-container {
+  width: fit-content;
+  border-bottom: solid 0.3rem var(--white);
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.app-section article {
+  padding: 1em;
+}
+
+.app-section h2,
+.app-section h3,
+.app-section p {
+  color: var(--white);
+}
+
+.app-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 0.1em;
+}
+
+.app-section h3 {
+  font-size: 1.5rem;
+  font-size: 700;
+}
+
+.app-section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
 @media (min-width: 700px) {
   header img {
     margin-left: 1em;
