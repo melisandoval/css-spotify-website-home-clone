@@ -235,6 +235,7 @@ nav a {
   .app-section {
     display: grid;
     grid-template-columns: 70% 30%;
+    align-items: center;
   }
 
   .app-section-content-container {
@@ -270,7 +271,12 @@ nav a {
   .kanye-west-img-container img {
     display: block;
     max-width: 70%;
-    max-height: 80%;
     object-fit: contain;
+  }
+}
+
+@media (min-width: 1440px) {
+  .kanye-west-img-container img {
+    margin: 4em 0;
   }
 }
